@@ -1,8 +1,27 @@
 body {
   background-color: rgb(102, 102, 102);
+  overflow: hidden;
+}
+
+div {
+  height: 100px;
+  width: 100px;
+  position: relative;
+  animation: drop 2s;
 }
 
 .raindrop {
   height: 100px;
   width: 100px;
+}
+
+@keyframes drop {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  100% {
+    left: 0px;
+    top: 2000px;
+  }
 }
