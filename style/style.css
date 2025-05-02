@@ -1,13 +1,15 @@
 body {
+  margin: 0;
+  height: 100vh;
   background-color: rgb(102, 102, 102);
   overflow: hidden;
 }
 
-div {
-  height: 100px;
-  width: 100px;
-  position: relative;
-  animation: drop 2s;
+span {
+  position: absolute;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  animation: drop 6s;
 }
 
 .raindrop {
@@ -17,11 +19,9 @@ div {
 
 @keyframes drop {
   0% {
-    left: 0px;
-    top: 0px;
+    transform: translate(-50%, -50%);
   }
   100% {
-    left: 0px;
-    top: 2000px;
+    transform: translate(-50%, 5000%);
   }
 }

@@ -1,3 +1,3 @@
-import raindrops from './raindrops.js'
+import multipleRaindrop from './multipleRaindrop.js'
 
-raindrops()
+multipleRaindrop()
